@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+}
+
+    /*-----Header-----*/
+header{
+    height: calc(100vh - 150px);
+    background: no-repeat center/cover url('/img/manuel-cosentino-n--CMLApjfI-unsplash.jpg');
+}
+    /*-----Menu-----*/
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 15px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+nav p{
+    font-weight: bold;
+}
+    /*-----End Menu-----*/
+
+    /*-----Start Header Text-----*/
+
+.header-content{
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+button{
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 0;
+    background: #762a2e;
+    color: white;
+}
+    /*-----End Header Text-----*/
+
+    /*-----Responsividade -----*/
+    /*-----Tablet-----*/
+@media (max-width: 767px) {
+    header{
+
+    }
+}
+    /*-----Celular-----*/
+@media (max-width: 480px) {
+    body{
+        height: calc(100vh - 55px);
+    }
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        background: #1d61dd;
+        color: white;
+        font-weight: bold;
+
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
