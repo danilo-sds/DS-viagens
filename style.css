@@ -14,7 +14,7 @@ body{
     /*-----Header-----*/
 header{
     height: calc(100vh - 150px);
-    background: no-repeat center/cover url('/img/manuel-cosentino-n--CMLApjfI-unsplash.jpg');
+    background: no-repeat center/cover url('/img/monte-fuji.jpg');
 }
     /*-----Menu-----*/
 
@@ -58,8 +58,91 @@ button{
     border: 0;
     background: #762a2e;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
     /*-----End Header Text-----*/
+
+.pacotes{
+    background: #e5e5e5;
+    padding: 15px;
+}
+.pacotes .pacotes-cards{
+    display: flex;
+}
+
+.pacotes .pacotes-title{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.pacotes .card{
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0px;
+    margin: 25px auto;
+    position: relative;
+}
+
+.pacotes .card-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0;
+}
+.pacotes .card-content{
+    padding: 0 15px;
+}
+.pacotes .card-content h1{
+    font-size: 1rem;
+}
+
+.pacotes .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.pacotes .card-content ul li{
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    margin: 2px 0;
+    color: gray;
+    font-weight: bold;
+}
+
+.pacotes .card-content li i{
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+.pacotes .card .card-tag-top{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #f19b39;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card .card-tag-bottom{
+     position: absolute;
+     left: 0;
+     top: 165px;
+     background: #1d61dd;
+     border-radius: 0 8px 8px 0;
+     padding: 5px 10px;
+}
+
+.pacotes .card .card-tag p{
+    margin: 0;
+    font-size: .8rem;
+    color: white;
+    font-weight: bold;
+}
 
     /*-----Responsividade -----*/
     /*-----Tablet-----*/
