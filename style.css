@@ -1,73 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-*{
+/*-----Configurações-----*/
+
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     width: 99vw;
 }
 
-    /*-----Header-----*/
-header{
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*-----End Configurações-----*/
+
+
+/*-----Header-----*/
+
+header {
     height: calc(100vh - 150px);
     background: no-repeat center/cover url('/img/monte-fuji.jpg');
 }
-    /*-----Menu-----*/
 
-header nav ul{
+
+/*-----Menu-----*/
+
+header nav ul {
     list-style: none;
     display: flex;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 0 15px;
 }
 
-header nav{
+header nav {
     display: flex;
     justify-content: space-between;
     margin: auto 30px;
 }
 
-nav p{
+nav p {
     font-weight: bold;
 }
-    /*-----End Menu-----*/
 
-    /*-----Start Header Text-----*/
 
-.header-content{
+/*-----End Menu-----*/
+
+
+/*-----Start Header Text-----*/
+
+.header-content {
     max-width: 400px;
     margin: 150px auto;
     text-align: center;
 }
 
-.header-content h1{
+.header-content h1 {
     margin-bottom: 10px;
     font-size: 4rem;
 }
 
-button{
+button {
     padding: 10px 15px;
     border-radius: 8px;
     font-weight: bold;
     border: 0;
-    background: #762a2e;
+    background: #1d61dd;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
-    /*-----End Header Text-----*/
 
-    /*-----Pacote -----*/
-.pacotes{
-    background: #e5e5e5;
+
+/*-----End Header Text-----*/
+
+
+/*----- Start Pacote -----*/
+
+.pacotes {
+    background: #e1e8f7;
+    /*#e5e5e5*/
     padding: 15px;
 }
-.pacotes .pacotes-cards{
+
+.pacotes .pacotes-cards {
     display: flex;
     margin: auto;
     max-width: 950px;
@@ -75,13 +102,13 @@ button{
     justify-content: center;
 }
 
-.pacotes .pacotes-title{
+.pacotes .pacotes-title {
     width: 100%;
     margin: 25px 0;
     text-align: center;
 }
 
-.pacotes .card{
+.pacotes .card {
     width: 250px;
     height: 350px;
     background: white;
@@ -90,27 +117,29 @@ button{
     position: relative;
 }
 
-.pacotes .card-img{
+.pacotes .card-img {
     width: 250px;
     height: 200px;
     border-radius: 24px 0 0;
     object-fit: cover;
 }
-.pacotes .card-content{
+
+.pacotes .card-content {
     padding: 0 15px;
 }
-.pacotes .card-content h1{
+
+.pacotes .card-content h1 {
     font-size: 1rem;
 }
 
-.pacotes .card-content ul{
+.pacotes .card-content ul {
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0;
 }
 
-.pacotes .card-content ul li{
+.pacotes .card-content ul li {
     font-size: .6rem;
     display: flex;
     align-items: center;
@@ -119,13 +148,17 @@ button{
     font-weight: bold;
 }
 
-.pacotes .card-content li i{
+.pacotes .card-content li i {
+    font-size: .6rem;
     margin-right: 10px;
     width: 16px;
     height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.pacotes .card .card-tag-top{
+.pacotes .card .card-tag-top {
     position: absolute;
     right: 0;
     top: 15px;
@@ -134,63 +167,205 @@ button{
     padding: 5px 10px;
 }
 
-.pacotes .card .card-tag-bottom{
-     position: absolute;
-     left: 0;
-     top: 165px;
-     background: #1d61dd;
-     border-radius: 0 8px 8px 0;
-     padding: 5px 10px;
+.pacotes .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 165px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
 }
 
-.pacotes .card .card-tag p{
+.pacotes .card .card-tag p {
     margin: 0;
     font-size: .8rem;
     color: white;
     font-weight: bold;
 }
-    /*----- End Pacotes -----*/
 
-    /*-----Responsividade -----*/
-    /*-----Tablet-----*/
-@media (max-width: 767px) {
-    header{
 
+/*----- End Pacotes -----*/
+
+
+/*----- Start Serviços -----*/
+
+.servicos {
+    padding: 15px;
+}
+
+.servicos .servico-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards {
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.servicos .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card i {
+    font-size: 60px;
+    margin: 50px 0;
+    transition: all 1s;
+}
+
+.servicos .card i:hover {
+    transform: scale(1.1);
+}
+
+.servicos .card h3 {
+    font-weight: bold;
+}
+
+.servicos .card p {
+    color: gray;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.servicos .card .card-content {
+    height: 180px;
+    text-align: center;
+}
+
+.servicos button {
+    background: #1d61dd;
+}
+
+
+/*----- End Serviços-----*/
+
+
+/*----- Start Map-----*/
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.contato {
+    padding: 60px;
+    background: red;
+    position: relative;
+    background: #e1e8f7;
+}
+
+.contato .contato-card {
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    top: calc(50% - 150px);
+    left: calc(20% - 175px);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.contato-card h1 {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato-card li {
+    font-size: .8rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.contato-card li i {
+    font-size: 16px;
+    margin: 10px;
+}
+
+
+/*-----Responsividade -----*/
+
+
+/*-----Especial para o Mapa -----*/
+
+@media (max-width: 950px) {
+    .contato {
+        padding: 60px 0;
+    }
+    .contato .contato-card {
+        left: 40px;
     }
 }
-    /*-----Celular-----*/
+
+@media (max-width: 800px) {
+    .contato {
+        padding: 20px 0;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+
+/*----- End mapa -----*/
+
+
+/*-----Tablet-----*/
+
+@media (max-width: 767px) {}
+
+
+/*-----Celular-----*/
+
 @media (max-width: 480px) {
-    body{
+    body {
         height: 55px
     }
-    header nav ul{
+    header nav ul {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
         padding: 0;
         margin: 0;
-
         z-index: 99;
-
         background: #1d61dd;
         color: white;
         font-weight: bold;
-
         height: 55px;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
-    header nav p{
+    header nav p {
         width: 100%;
         text-align: center;
+    }
+    .contato {
+        padding: 20px 0;
+    }
+    .contato .contato-card {
+        position: static;
+        margin: 40px auto;
     }
 }
 
 
-
-
-
+/*-25.344
+131.036*/
